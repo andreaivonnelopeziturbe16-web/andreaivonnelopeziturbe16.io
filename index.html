@@ -1,0 +1,613 @@
+<!--Recuadro de datos:
+Andrea Ivonne Lopez Iturbe
+235144
+Diseño Web html5 y css3 adaptativo
+Grupo A-->
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bitacora</title>
+    <link rel="stylesheet" href="estilos.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Ruluko&family=Poppins&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+    <header>
+        <img src="img/logoo.png" alt="Logo">
+    </header>
+
+    <nav>
+        <a href="#unidad1">Unidad 1</a>
+        <a href="#unidad2">Unidad 2</a>
+        <a href="#unidad3">Unidad 3</a>
+    </nav>
+
+    <section id="unidad1">
+        <section id="grafico">
+            <div class="titulo">
+                <h1>Gráfico de temas previos</h1>
+            </div>
+            <div class="contenedor">
+                <div class="seccion1">
+                    <div class="foto1">
+                        <img src="img/Inforgrafia.png" alt="Infografía">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="critica">
+            <div class="titulo">
+                <h1>Critica página web</h1>
+            </div>
+            <div class="contenedor">
+                <div class="seccion2">
+                    <div class="foto2">
+                        <img src="img/critica.png" alt="Critica">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="dom">
+            <div class="titulo">
+                <h1>DOM en HTML, CSS y JavaScript</h1>
+            </div>
+            <div class="contenedor">
+                <div class="seccion3">
+                    <div class="texto1">
+                        <b>¿Que es el DOM?<br></b>
+                        El DOM podria representarse como el plano de la casa, donde cada habitación, puerta, ventana,
+                        etc.,
+                        es
+                        un objeto en el diagrama. Podemos usar el plano (DOM) para encontrar una habitación específica
+                        (un
+                        elemento) y cambiar su color (modificar su estilo) o añadir un mueble nuevo (insertar un
+                        elemento).
+                        O
+                        puede ser como cuando tienes una libreta con contactos. Tú puedes abrirla, buscar a tu amigo y
+                        cambiar
+                        su número de teléfono.
+                        En el DOM haces lo mismo: buscas un elemento y le cambias algo (texto, color, tamaño).
+                        <br>
+                        <br>
+                        <b>Eventos<br></b>
+                        Los eventos DOM son acciones que indican que algo ha sucedido en el DOM <br>
+                        <li>Alguien toca un botón.</li>
+                        <li>Alguien escribe algo.</li>
+                        <li>Alguien mueve el mouse.</li><br>
+                        Ejemplo cotidiano:
+                        Cuando entras a una tienda y la puerta automática se abre sola porque detectó tu movimiento.
+                        El evento fue “te acercaste” y la reacción fue “abrir la puerta”.
+                        <br>
+                        <br>
+                        <b>Animacion<br></b>
+                        Las animaciones son como hacer que los objetos se muevan o cambien poco a poco.
+                        Pueden girar, moverse, agrandarse, desaparecer, cambiar su opacidad, color, etc.
+                        Ejemplo:
+                        Un semáforo no cambia de golpe, sino que ves cómo pasa de verde, amarillo, rojo poco a poco. Eso
+                        es
+                        una
+                        animación.
+                        <br>
+                        <br>
+                        <b>CSS<br></b>
+                        Podemos representarlo como todo lo que cuente como cosmético, como: maquillaje, ropa y
+                        accesorios.
+                        Ya
+                        que, estas cambian la forma en la que se ve el cuerpo sin realmente afectar la estructura
+                        principal.
+                        Modifica como nos vemos en tema de colores, tamaños, y estetica.
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="viewport">
+            <div class="titulo">
+                <h1>Viewport</h1>
+            </div>
+            <div class="contenedor">
+                <div class="seccion4">
+                    <div class="texto1">
+                        El viewport es una etiqueta de html5 que indica el tamaño de la ventana o área visible de una
+                        pantalla
+                        Se encarga de escalar los contenidos a mostrar, adaptando la longitud y la anchura de las pagina
+                        web
+                        de
+                        cualquier dispositivo, asegurándose de que todo el contenido sea legible y se muestre de forma
+                        correcta
+                        en cualquier pantalla
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="Unidades">
+            <div class="titulo">
+                <h1>Unidades de medida</h1>
+            </div>
+            <div class="contenedor">
+                <div class="seccion4">
+                    <div class="texto1">
+                        <b>Unidades de medida estáticas y relativas</b><br>
+                        <br>
+                        <b>Unidades estáticas (absolutas)</b> estas unidades mantienen un tamaño fijo sin importar el
+                        contexto del
+                        diseño <br>
+                        <li><b>(pixeles):</b> Es la unidad más común en diseño web. Un pixel es un punto en la pantalla.
+                            <br>
+                        </li>
+                        <li><b>Cm (centímetros), mm (milímetros), in (pulgadas), pt (puntos), pc (picas): </b>Estas son
+                            mas
+                            adecuadas para
+                            la impresión, ya que son medidas físicas. <br></li>
+                        <b> Unidades relativas:</b> se calculan en relación a otro valor, lo que se hace flexibles y
+                        útiles
+                        para el
+                        diseño web responsivo. <br>
+                        <li><b>% (porcentaje):</b> relativa al 100% del elemento padre. <br></li>
+                        <li><b>Em:</b> Relativa al tamaño de fuente del elemento padre. <br></li>
+                        <li><b>Rem (root em):</b> Relativa al tamaño de la fuente del elemento raíz (html>). <br></li>
+                        <li><b>Vw (viewport width):</b> relativa al 1% del ancho de la ventana grafica (viewport). <br>
+                        </li>
+                        <li><b>Vh (viewport height):</b> relativa al 1% de la altura de la ventana grafica (viewport).
+                            <br>
+                        </li>
+                        <li><b>Ch: </b>Relativa al ancho del carácter “0” (cero) en la fuente del elemento. <br></li>
+                        <li><b>Ex:</b>Relativa a la altura de la minúscula “x”. <br></li>
+                        <br>
+                        <b>¿Cuándo usarlas?</b> <br>
+                        <li>Unidades relativas: Son ideales para crear interfaces web adaptables que se vean bien en
+                            cualquier
+                            tamaño de pantalla, desde un celular hasta un monitor grande. <br> </li>
+                        <li>Unidades estáticas: Se usan menos en diseño web moderno, pero son útiles para situaciones
+                            específicas,
+                            como el diseño de impresión o para elementos cuyo tamaño debe ser exactamente el mismo en
+                            todos
+                            los
+                            dispositivos </li>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="diagrama">
+            <div class="titulo">
+                <h1>Diagrama de flujo</h1>
+            </div>
+            <div class="contenedor">
+                <div class="seccion5">
+                    <div class="foto5">
+                        <img src="img/diagrama.png" alt="Diagrama de flujo">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="media">
+            <div class="titulo">
+                <h1>¿Que es la @media?</h1>
+            </div>
+            <div class="contenedor">
+                <div class="seccion6">
+                    <div class="texto1">
+                        Se utiliza para aplicar estilos diferentes dependiendo del dispositivo o el tamaño de la
+                        pantalla.
+                        <br>
+                        @media sirve para que una página web se vea bien en computadoras, tablets y celulares, adaptando
+                        el
+                        diseño según el ancho, la altura o incluso la orientación de la pantalla.
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="IA">
+            <div class="titulo">
+                <h1>IA implementada en codigos web</h1>
+            </div>
+            <div class="contenedor">
+                <div class="seccion7">
+                    <div class="texto1">
+                        <b>¿Qué significa implementar IA en la web?</b>
+                        <li>Es integrar herramientas de inteligencia artificial en páginas o aplicaciones web.</li>
+                        <li>Permite que la web no solo muestre información, sino que aprenda, responda, y realice tareas
+                            inteligentes.</li>
+                        <br>
+                        <b>Formas de implementar IA en una página web</b>
+                        <br>
+                        <b>APIs de IA: </b> <br>
+                        <li>Ejemplo: ChatGPT API (OpenAI), Google Cloud AI, Microsoft Azure AI.</li>
+                        <li>Conectas tu página web a estos servicios y ellos procesan los datos.</li>
+                        <li>Usado para chatbots, traducciones, análisis de texto o imágenes.</li>
+                        <b>Librerías de JavaScript con IA:</b> <br>
+                        <li>Ejemplo: TensorFlow.js (para entrenar y usar modelos en el navegador).</li>
+                        <li>Puedes crear un modelo que reconozca imágenes, voz o patrones directamente en la web.</li>
+                        <b>Modelos pre-entrenados:</b><br>
+                        <li>Usar modelos ya listos que reconocen caras, voces o generan texto.</li>
+                        <li>Ejemplo: ml5.js (más fácil de usar que TensorFlow.js).</li>
+                        <br>
+                        <b>Ejemplos prácticos de uso en páginas web</b>
+                        <br>
+                        <li>Chatbots inteligentes: para atención al cliente (ej. IA tipo ChatGPT).</li>
+                        <li>Reconocimiento de voz: convertir audio en texto en tiempo real.</li>
+                        <li>Recomendaciones personalizadas: sugerir productos o música según el usuario.</li>
+                        <li>Análisis de imágenes: identificar objetos en una foto subida.</li>
+                        <li>Traducción automática: integrar un traductor en la web.</li>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </section>
+
+    <section id="unidad2">
+
+        <section id="property">
+            <div class="titulo">
+                <h1>Property</h1>
+            </div>
+            <div class="contenedor">
+                <div class="seccion8">
+                    <div class="texto1">
+                        La regla @property en CSS permite definir un "tipo" para tus propiedades personalizadas
+                        (variables
+                        CSS).
+                        <br>
+                        Esto añade significado semántico, define un valor de resguardo (un valor inicial por si la
+                        asignación falla) y mejora el manejo de errores.
+                        <br>
+                        Permite cosas como animar gradientes y asegurar que se usen datos correctos, al igual que un
+                        sistema
+                        de tipos en otros lenguajes.
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="diagramabitacora">
+            <div class="titulo">
+                <h1>Diagrama de flujo bitacora</h1>
+            </div>
+            <div class="contenedor">
+                <div class="seccion9">
+                    <div class="foto8">
+                        <img src="img/DiagramaBitacora.png" alt="Diagrama de flujo">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="wireframes">
+            <div class="titulo">
+                <h1>Wireframes de baja fidelidad</h1>
+            </div>
+            <div class="contenedor">
+                <div class="seccion11">
+                    <div class="foto9">
+                        <img src="img/baja fidelidad.png" alt="Diagrama de flujo">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="logoo">
+            <div class="titulo">
+                <h1>Logo reticulado</h1>
+            </div>
+            <div class="contenedor">
+                <div class="seccion9">
+                    <div class="foto8">
+                        <img src="img/logooo.png" alt="Diagrama de flujo">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="Animacion">
+            <div class="titulo">
+                <h1>Animacion</h1>
+            </div>
+            <div class="contenedor">
+                <div class="seccion10">
+                    <div class="foto8">
+                        <a href="animacion.html" class="boton">Ir a la animacion</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="altafidelidad">
+            <div class="titulo">
+                <h1>Wireframes de alta fidelidad</h1>
+            </div>
+            <div class="contenedor">
+                <div class="seccion11">
+                    <div class="foto9">
+                        <img src="img/Sitio web uacj.png" alt="Mockup uacj">
+                        <img src="img/alta fidelidad.png" alt="wireframes uacj">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="JavaScript">
+            <div class="titulo">
+                <h1>Else-if</h1>
+            </div>
+            <div class="contenedor">
+                <div class="seccion12">
+                    <div class="foto8">
+                        <a href="disney.html" class="boton">Ir al menu del restaurante</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="Proyecto2">
+            <div class="titulo">
+                <h1>Proyecto Parcial 2</h1>
+            </div>
+            <div class="contenedor">
+                <div class="seccion13">
+                    <h1>Bocetos</h1>
+                    <div class="foto8">
+                        <img src="img/Bocetos.png" alt="Bocetos fisicos">
+                    </div>
+                    <h1>Wireframes estaticos</h1>
+                    <div class="foto8">
+                        <img src="img/estaticos.png" alt="wireframes estaticos">
+                    </div>
+                    <h1>Mapa de la pagina</h1>
+                    <div class="foto8">
+                        <img src="img/mapadepagina.png" alt="mapa de la pagina">
+                    </div>
+                    <h1>Logo</h1>
+                    <div class="foto8">
+                        <img src="img/logo.png" alt="logo">
+                    </div>
+                    <h1>Wireframes finos en mockup</h1>
+                    <div class="foto8">
+                        <img src="img/finos.png" alt="Wireframes finos en mockup">
+                    </div>
+                    <h1>Presentacion</h1>
+                    <div class="foto8">
+                        <img src="img/juegoclue.png" alt="presentacion">
+                    </div>
+                    <div class="foto8">
+                        <a href="https://carlosavta.github.io/web/" class="boton">Ir al la pagina web</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="unidad3">
+
+            <section id="Funciones Java Script">
+                <div class="titulo">
+                    <h1>Colores y tipografia</h1>
+                </div>
+                <div class="contenedor">
+                    <div class="seccion13">
+                        <div class="foto8">
+                            <img src="img/presentacion6.png" alt="Explicacion">
+                        </div>
+                        <div class="foto8">
+                            <img src="img/presentacion1.png" alt="Paleta de colores">
+                        </div>
+                        <div class="foto8">
+                            <img src="img/presentacion2.png" alt="Paleta de colores">
+                        </div>
+                        <div class="foto8">
+                            <img src="img/presentacion3.png" alt="Tipografia">
+                        </div>
+                        <div class="foto8">
+                            <img src="img/presentacion4.png" alt="Competencia">
+                        </div>
+                        <div class="foto8">
+                            <img src="img/presentacion5.png" alt="Diferenciador">
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section id="Funciones Java Script">
+                <div class="titulo">
+                    <h1>Funciones en Java Script</h1>
+                </div>
+                <div class="contenedor">
+                    <div class="seccion13">
+                        <div class="foto8">
+                            <img src="img/funciones.png" alt="Funciones">
+                        </div>
+                        <div class="foto8">
+                            <img src="img/funcion1.png" alt="Funciones que retornan valores">
+                        </div>
+                        <div class="foto8">
+                            <img src="img/funcion2.png" alt="Llamada a una función">
+                        </div>
+                        <div class="foto8">
+                            <img src="img/funcion3.png" alt="Imprimir en consola el resultado de una funcion">
+                        </div>
+                        <div class="foto8">
+                            <img src="img/funcion4.png" alt="GetElementById">
+                        </div>
+                        <div class="foto8">
+                            <img src="img/funcion5.png" alt="AddEventListener">
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section id="Parallax">
+                <div class="titulo">
+                    <h1>Parallax</h1>
+                </div>
+                <div class="contenedor">
+                    <div class="seccion10">
+                        <div class="foto8">
+                            <a href="parallax.html" class="boton">Ir a la animacion</a>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section id="FlexBox">
+                <div class="titulo">
+                    <h1>FlexBox</h1>
+                </div>
+                <div class="contenedor">
+                    <div class="seccion16">
+                        <div class="texto1">
+                            <p>Flexbox es un modelo de maquetación en CSS que facilita la organización de elementos en
+                                una sola dimensión (ya sea en una fila o columna) y permite que los elementos se ajusten
+                                automáticamente al espacio disponible. Se utiliza para crear diseños más flexibles y
+                                responsivos, siendo más eficiente para la alineación y distribución de elementos que
+                                métodos más antiguos como float. </p>
+
+                            <img src="img/flexbox.png" alt="¿Que es el flexbox?">
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section id="Cotizacion">
+                <div class="titulo">
+                    <h1>Cotizacion</h1>
+                </div>
+                <div class="contenedor">
+                    <div class="seccion15">
+                        <div class="texto1">
+                            <h1>1. Descripción general del servicio</h1>
+                            <br>
+                            <p>Se presenta la siguiente propuesta para el desarrollo de un sitio web profesional y
+                                adaptable, con diseño personalizado, optimización básica para buscadores (SEO),
+                                integración de contenidos y compatibilidad con dispositivos móviles (responsive
+                                design). <br>
+
+                                El proyecto tiene como finalidad establecer una presencia digital sólida, moderna y
+                                funcional, que refleje la identidad y objetivos del cliente.</p>
+                            <br>
+                            <h1>2. Alcance del proyecto</h1>
+                            <img src="img/alcancew.png" alt="">
+                            <br>
+                            <h1>3. Tiempo estimado de entrega</h1>
+                            <p>El tiempo estimado para la realización del proyecto es de 15 a 20 días hábiles,
+                                contados a partir de la recepción del anticipo y del contenido proporcionado por el
+                                cliente (textos, imágenes y logotipo).</p>
+                            <br>
+                            <h1>4. Condiciones de pago</h1>
+                            <li>50% de anticipo al iniciar el proyecto.
+                            <li>50% restante al momento de la entrega final del sitio web.</li>
+                            <li>Incluye 1 mes de soporte técnico gratuito posterior a la entrega.</li>
+                            <li>Cualquier modificación o adición no contemplada en esta cotización se cotizará por
+                                separado.</li>
+                            <br>
+                            <h1>5. Servicios adicionales opcionales</h1>
+                            <div class="foto8">
+                            <img src="img/6.png" alt="">
+                        </div>
+                            <h1>6. Observaciones</h1>
+                            <p>El desarrollo se realizará conforme a los lineamientos acordados con el cliente. Se
+                                garantiza confidencialidad, cumplimiento de plazos y entrega del proyecto en óptimas
+                                condiciones de funcionamiento.</p>
+                        </div>
+                    </div>
+                </div>
+                </div>
+            </section>
+
+            <section id="Boostrap">
+                <div class="titulo">
+                    <h1>Boostrap</h1>
+                </div>
+                <div class="contenedor">
+                    <div class="seccion10">
+                        <div class="texto1">
+                            <h1>¿Qué es Bootstrap y para qué sirve?</h1>
+                            <p>Bootstrap es un framework que permite a los desarrolladores web construir páginas web
+                                responsives de una forma más rápida y sencilla. En este sentido, proporciona un conjunto
+                                de
+                                componentes y plantillas CSS, HTML y JavaScript que cualquiera puede utilizar o
+                                modificar de
+                                manera gratuita.</p>
+                            <h1>¿Cómo funciona Bootstrap?</h1>
+                            <p>La instalación de Bootstrap es sencilla y su librería de componentes es muy amplia. En
+                                este
+                                sentido, proporciona un gran conjunto de componentes web que pueden ser incorporados y
+                                personalizados en cualquier proyecto: botones, menú de navegación, galerías de imágenes,
+                                formularios, páginas de productos, etc. <br>
+
+                                Con la ayuda de jQuery, una librería de JavaScript, los desarrolladores pueden hacer uso
+                                de
+                                todos sus componentes, los cuales funcionan gracias a estos tres archivos:</p>
+                            <br>
+                            <li>Bootstrap.CSS: contiene los estilos de los diferentes elementos de Bootstrap. Para
+                                utilizarlos o modificarlos, los programadores tan solo tienen que hacer referencia al
+                                componente que deseen.</li>
+                            <li>Bootstrap.js: contiene la lógica de funcionamiento del framework y es el responsable de
+                                la
+                                interactividad del sitio web. También, es el encargado de reinterpretar el diseño según
+                                el
+                                tamaño de la pantalla de cada usuario.</li>
+                            <li>Glyphicons: proporciona una galería de iconos gratuitos que los desarrolladores pueden
+                                utilizar, aunque también se pueden descargar iconos adicionales premium.</li>
+
+                            <div class="foto8">
+                            <img src="img/boostrap.webp" alt="boostrap">
+                        </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section id="Cookies">
+                <div class="titulo">
+                    <h1>Cookies</h1>
+                </div>
+                <div class="contenedor">
+                    <div class="seccion16">
+                        <div class="texto1">
+                            <p>Las cookies son
+                                pequeños archivos de texto que un sitio web envía a tu navegador y que se almacenan en
+                                tu dispositivo. Su función principal es recordar información sobre ti y tu actividad,
+                                como las preferencias de inicio de sesión, el idioma o los productos en tu carrito de
+                                compras, para mejorar y personalizar tu experiencia de navegación. </p>
+
+                            <div class="foto8">
+                            <img src="img/cookies.png" alt="cookies">
+                        </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section id="Perfiles de usuario">
+                <div class="titulo">
+                    <h1>Perfiles de usuario</h1>
+                </div>
+                <div class="contenedor">
+                    <div class="seccion13">
+                        <div class="foto8">
+                            <img src="img/Perfil1.png" alt="Funciones">
+                        </div>
+                        <div class="foto8">
+                            <img src="img/Perfil2.png" alt="Funciones que retornan valores">
+                        </div>
+                        <div class="foto8">
+                            <img src="img/Perfil3.png" alt="Llamada a una función">
+                        </div>
+                    </div>
+                </div>
+                </div>
+            </section>
+        </section>
+</body>
+
+</html>

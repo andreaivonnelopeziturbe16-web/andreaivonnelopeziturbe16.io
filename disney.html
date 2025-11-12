@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Normaliza estilos por defecto de todos los navegadores -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
+
+    <title>Restaurante</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #fff8f0;
+            margin: 0;
+            text-align: center;
+        }
+
+        header {
+            background-color: #6b2a2a;
+            color: white;
+            padding: 20px;
+            font-size: 24px;
+            font-weight: bold;
+        }
+
+        main {
+            background-color: white;
+            width: 90%;
+            max-width: 600px;
+            margin: 30px auto;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        select {
+            width: 100%;
+            padding: 10px;
+            font-size: 16px;
+            border-radius: 8px;
+            border: 1px solid #b9975b;
+            margin-top: 10px;
+        }
+
+        img {
+            width: 90%;
+            border-radius: 10px;
+            margin-top: 15px;
+        }
+
+        .descripcion {
+            font-style: italic;
+            margin-top: 10px;
+        }
+
+        .precio {
+            color: #6b2a2a;
+            font-weight: bold;
+            margin-top: 5px;
+        }
+
+        footer {
+            background-color: #6b2a2a;
+            color: white;
+            padding: 10px;
+            margin-top: 30px;
+            font-size: 14px;
+        }
+        
+        .btn-volver {
+      display: inline-block;
+      background-color: #6b2a2a;
+      color: white;
+      border: none;
+      padding: 10px 20px;
+      border-radius: 8px;
+      font-size: 16px;
+      cursor: pointer;
+      transition: background-color 0.3s;
+      margin-top: 20px;
+    }
+
+    .btn-volver:hover {
+      background-color: #a34747;
+    }
+    </style>
+</head>
+
+<body>
+
+    <header>Restaurante</header>
+
+    <main>
+        <h2>Menú del Chef</h2>
+        <p>Elige un platillo para ver su descripción:</p>
+
+        <select id="platillo">
+            <option value="">-- Selecciona --</option>
+            <option value="steak">Filete de Res en Salsa de Vino</option>
+            <option value="salmon">Salmón con Hierbas</option>
+            <option value="pasta">Pasta Trufada</option>
+            <option value="ensalada">Ensalada Mediterránea</option>
+            <option value="postre">Tarta de Frutas</option>
+        </select>
+
+        <div id="info"></div>
+        <button class="btn-volver" onclick="window.history.back()">Volver</button>
+    </main>
+
+    <footer>Restaurante</footer>
+
+    <script>
+        const select = document.getElementById("platillo");
+        const info = document.getElementById("info");
+
+        select.addEventListener("change", () => {
+            let texto = "", imagen = "", precio = "";
+
+            if (select.value === "steak") {
+                texto = "Corte angus con salsa de vino tinto y puré de papa.";
+                imagen = "https://www.ranchoel17.com/cdn/shop/files/RIB-EYE_ee68ae8b-3b13-4493-b358-5a1cdc8c2e23.jpg?v=1752346868";
+                precio = "$480 MXN";
+            } else if (select.value === "salmon") {
+                texto = "Salmón marinado con hierbas y vegetales.";
+                imagen = "https://www.gourmet.cl/wp-content/uploads/2016/09/Salm%C3%B3n-a-las-finas-hierbas-web.jpg";
+                precio = "$430 MXN";
+            } else if (select.value === "pasta") {
+                texto = "Pasta con crema de trufa y parmesano.";
+                imagen = "https://www.comprartrufanegra.es/wp-content/uploads/2021/10/Receta-De-Espaguetis-Con-Parmesano-Y-Trufa-Fresca.jpg";
+                precio = "$350 MXN";
+            } else if (select.value === "ensalada") {
+                texto = "Hojas verdes con tomates, aceitunas y vinagreta.";
+                imagen = "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTwOWe-s9AzzysHWm6lBDv-mvHVfPk9uecwJA&s";
+                precio = "$260 MXN";
+            } else if (select.value === "postre") {
+                texto = "Tarta con crema pastelera y frutas frescas.";
+                imagen = "https://lacocinadefrabisa.lavozdegalicia.es/wp-content/uploads/2020/09/tarta-de-frutas-BIS.jpg";
+                precio = "$190 MXN";
+            }
+
+            if (select.value) {
+                info.innerHTML = `
+          <h3>${select.options[select.selectedIndex].text}</h3>
+          <img src="${imagen}" alt="">
+          <p class="descripcion">${texto}</p>
+          <p class="precio">${precio}</p>
+        `;
+            } else {
+                info.innerHTML = "";
+            }
+        });
+    </script>
+</body>
+
+</html>

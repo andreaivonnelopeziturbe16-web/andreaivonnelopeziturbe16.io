@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Parallax Disney</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background: #ffffff;
+            overflow-x: hidden;
+        }
+
+        #parallax-container {
+            position: relative;
+            height: 100vh;
+            overflow: hidden;
+        }
+
+        /* Fondo */
+        #layer1 {
+            position: absolute;
+            z-index: 1;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-image: url(img/layer1.png);
+            background-size: cover;
+            background-position: center;
+        }
+
+        /* Castillo */
+        #layer2 {
+            position: absolute;
+            z-index: 2;
+            width: 100%;
+            bottom: 0;
+            left: auto;
+        }
+
+        /* Princesas */
+        #layer3 {
+            position: absolute;
+            z-index: 3;
+            width: 100%;
+            bottom: 0;
+            left: 0%;
+        }
+
+        /* Princesas*/
+        #layer4 {
+            position: absolute;
+            z-index: 4;
+            width: 55%;
+            bottom: 0;
+            left: 0%;
+        }
+
+        /* Contenido de abajo */
+        .contenido {
+            padding: 60px;
+            background: rgb(226, 139, 173);
+            text-align: center;
+            min-height: 600px;
+        }
+    </style>
+
+</head>
+
+<body>
+
+    <div id="parallax-container">
+
+        <!-- Capa Fondo -->
+        <div id="layer1"></div>
+
+        <!-- Capa Castillo -->
+        <div id="layer2">
+            <img src="img/layer2.png">
+        </div>
+
+        <!-- Capa Princesas -->
+        <div id="layer3">
+            <img src="img/layer4.png">
+        </div>
+
+        <!-- Capa Rapunzel -->
+        <div id="layer4">
+            <img src="img/layer3.png">
+        </div>
+
+    </div>
+
+    <section class="contenido">
+        <h2>Bienvenidos al Mundo Disney</h2>
+        <br>
+        <p>El 16 de octubre de 1923, Walt Disney y su hermano Roy O. Disney fundaron la compañía que eventualmente se
+            convertiría en una de las empresas más influyentes en la industria del entretenimiento: The Walt Disney
+            Company. Para entender la importancia de esta fecha, es esencial remontarnos a los inicios de Walt Disney.
+        </p>
+        <div style="height: 400px;"></div>
+    </section>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            const layer1 = document.getElementById('layer1');
+            const layer2 = document.getElementById('layer2');
+            const layer3 = document.getElementById('layer3');
+            const layer4 = document.getElementById('layer4');
+
+            const speed1 = 0.4; // Fondo (se mueve más)
+            const speed2 = 0.2; // Castillo
+            const speed3 = 0.1; // Princesas (se mueve menos)
+            const speed4 = 0.1; // Princesas (se mueve menos)
+
+            function updateParallax() {
+                let scrollOffset = window.pageYOffset;
+                layer1.style.transform = `translateY(${scrollOffset * speed1}px)`;
+                layer2.style.transform = `translateY(${scrollOffset * speed2}px)`;
+                layer3.style.transform = `translateY(${scrollOffset * speed3}px)`;
+                layer4.style.transform = `translateY(${scrollOffset * speed4}px)`;
+            }
+
+            window.addEventListener('scroll', updateParallax);
+            updateParallax();
+        });
+    </script>
+
+</body>
+
+</html>
